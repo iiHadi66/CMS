@@ -1,0 +1,158 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.NewsPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "_Layout.cshtml";
+}
+<head>
+    <link rel="stylesheet" href="css/news.css">
+    <title>News | Citro - Agency Service</title>
+</head>
+
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <img src="images/logos/logotype.svg" alt="crito logotype">
+           <button class="menu-bars"><i class="menu-bars fa-solid fa-bars-staggered"></i></button> 
+        <div class="menu">
+            <div class="top-menu">
+                <div class="contact-information">
+                    <div class="content-box">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        +46 (8) 121 470 50
+                    </div>
+                    <div class="content-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@crito.com
+                    </div>
+                    <div class="content-box last">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Sveavägen 31, 111 34 STOCKHOLM
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="https://facebook.com/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="main-menu">
+                <nav>
+                    <a  href="/">Home</a>
+                    <a href="/Services">Service</a>
+                    <a class="active" href="/news">News</a>
+                    <a href="/Contacts">Contact</a>
+                </nav>
+                <a class="btn-theme btn-login" href="/Login">Login <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <!-- Showcase section  -->
+    <section class="showcase">
+        <div class="container">
+            <div class="content">
+                    <p>Home</p>
+                    <p class="thick">News</p>
+                <h1>News & Articles</h1>
+            </div>
+        </div>
+        <img class="background-lines" src="images/background-effects/background-lines.svg" alt="background lines">
+    </section>
+    <!-- Our News & Articels -->
+    <section class="news-and-articels">
+        <div class="container">
+           <h2>Our News & Articels</h2> 
+            <div class="content">
+                <a href="/Details"> 
+                <div class="box-info"><p class="day">25</p><p class="month">Mar</p></div>
+                <img src="images/linkedin-sales-solutions-Mis5fyJi7Q0-unsplash.jpg" alt="">
+                <p>Business</p>
+                <h3>How To Use Digitalization In The Classroom</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                </a>
+            </div>
+            <div class="content">
+                <div class="box-info"><p class="day">17</p><p class="month">Mar</p></div>
+                <img src="images/emiliano-vittoriosi-vEN1bsdSjxM-unsplash.jpg" alt="">
+                <p>Business</p>
+                <h3>How To Implement Chat GPT In Your Projects</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </div>
+            <div class="content"> 
+                <div class="box-info"><p class="day">13</p><p class="month">Mar</p></div>
+                <img src="images/kobu-agency-ipARHaxETRk-unsplash.jpg" alt="">
+                <p>Business</p>
+                <h3>The Guide To Support Modern CSS Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </div>
+            <div class="content">
+                <div class="box-info"><p class="day">12</p><p class="month">Mar</p></div>
+                <img src="images/the-climate-reality-project-Hb6uWq0i4MI-unsplash.jpg" alt="">
+                <p>Business</p>
+                <h3>Why You Need To Implement The Five S's</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </div>
+            <div class="content">
+                <div class="box-info"><p class="day">07</p><p class="month">Mar</p></div>
+                <img src="images/damir-kopezhanov-nC6CyrVBtkU-unsplash.jpg" alt="">
+                <p>Business</p>
+                <h3>Get More Involved With Your End Users</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </div>
+            <div class="content">
+                <div class="box-info"><p class="day">02</p><p class="month">Mar</p></div>
+                <img src="images/annie-spratt-FSFfEQkd1sc-unsplash.jpg" alt="">
+                <p>Business</p>
+                <h3>Guided Tour Of Our New Head Office In Stockholm</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </div>
+            <div class="content">
+                <div class="box-info"><p class="day">28</p><p class="month">Feb</p></div>
+                <img src="images/carlos-muza-hpjSkU2UYSU-unsplash.jpg" alt="">
+                <p>Business</p>
+                <h3>Using Business Intelligence To Get Insights Into Our Businesses</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </div>
+            <div class="content">
+                <div class="box-info"><p class="day">18</p><p class="month">Feb</p></div>
+                <img src="images/marek-levak-zANXcXyByos-unsplash.jpg" alt="">
+                <p>Business</p>
+                <h3>Apple Has Released New Products. Are They Any Good?</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </div>
+            <div class="content">
+                <div class="box-info"><p class="day">11</p><p class="month">Feb</p></div>
+                <img src="images/oli-dale-xjSkI_seiZY-unsplash.jpg" alt="">
+                <p>Business</p>
+                <h3>How To Improve Your Teams And Get A Better Result</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </div>
+            <div class="bottom-nav-menu">
+                <a href="#"><i class='fas fa-angle-left'></i></a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">...</a>
+                <a href="#">9</a>
+                <a href="#"><i class='fas fa-angle-right'></i></a>
+
+            </div>
+        </div>
+    </section>
+    <!-- Get News Update By Signup section -->
+    <section class="get-news-update">
+        <div class="container">
+            <div class="content">
+                <h2>Get News Update By Signup</h2>
+                <div class="subscribe">
+                    <input type="text" placeholder="username@domain.com" name="uname" required>
+                    <button class="btn-theme" href="projects.html">Subscribe<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+            </div>
+            <img src="images/background-effects/background-wavy-lines.svg" alt="wavy lines">
+        </div>
+    </section>
+    </main>

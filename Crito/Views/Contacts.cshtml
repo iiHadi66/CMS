@@ -1,0 +1,121 @@
+﻿@using Crito.Models;
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Contacts>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = "_Layout.cshtml";
+
+    var contactForm = new ContactForm();
+}
+<head>
+    <link rel="stylesheet" href="css/contacts.css">
+    <title>Contacts  | Citro - Agency Service</title>
+</head>
+ <!-- Header section -->
+    <header>
+        <div class="container">
+            <img src="images/logos/logotype.svg" alt="crito logotype">
+           <button class="menu-bars"><i class="menu-bars fa-solid fa-bars-staggered"></i></button> 
+        <div class="menu">
+            <div class="top-menu">
+                <div class="contact-information">
+                    <div class="content-box">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        +46 (8) 121 470 50
+                    </div>
+                    <div class="content-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@crito.com
+                    </div>
+                    <div class="content-box last">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Sveavägen 31, 111 34 STOCKHOLM
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="https://facebook.com/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="main-menu">
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/Services">Service</a>
+                    <a href="/News">News</a>
+                    <a class="active" href="/Contacts">Contact</a>
+                </nav>
+                <a class="btn-theme btn-login" href="/Login">Login <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <!-- Showcase section  -->
+    <section class="showcase">
+        <div class="container">
+            <div class="content">
+                    <p>Home</p>
+                    <p class="thick">Contact</p>
+                <h1>Let's Connect</h1>
+            </div>
+        </div>
+        <img class="background-lines" src="images/background-effects/background-lines.svg" alt="background lines">
+    </section>
+    <!-- Contacts info & form section -->
+    <section class="contacts-info-and-form">
+        <div class="container">
+            <div class="info">
+                <div class="content">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h5>Visit us</h5>
+                        <p>Sveavägen 31</p>
+                        <p>111 34 STOCKHOLM</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="icon"><i class="fa-solid fa-phone-volume"></i></div>
+                    <div class="text">
+                        <h5>Call us</h5>
+                        <p>+46 (8) 121 470 50</p>
+                        <p>+46 (8) 121 470 51</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h5>Email us</h5>
+                        <p>info@crito.com</p>
+                        <p>support@crito.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h2>Leave us a message for any information.</h2>
+
+                @using (Html.BeginUmbracoForm("Index", "Contacts", FormMethod.Post)) {
+                <div class="form-info">
+                        <div asp-validation-summary="ModelOnly"></div>
+                        <span asp-validation-for="@contactForm.Name"></span>
+                        <input asp-for="@contactForm.Name" type="text" placeholder="Name*">
+                        <span asp-validation-for="@contactForm.Email"></span>
+                        <input asp-for="@contactForm.Email" type="email" placeholder="Email*">
+                        <span asp-validation-for="@contactForm.Message"></span>
+                        <textarea asp-for="@contactForm.Message" type="text" placeholder="Your Message*"></textarea>
+                        <button type="submit" class="btn-theme">Send Message<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    </div>
+                }
+
+            </div>
+        </div>
+        <div class="map">
+            <section class="karta">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.779387597497!2d18.059430212862548!3d59.33663697451198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6799554e87%3A0x6562d2c842903003!2sSveav%C3%A4gen%2031%2C%20111%2034%20Stockholm!5e0!3m2!1ssv!2sse!4v1695686894913!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </section>
+    </main>

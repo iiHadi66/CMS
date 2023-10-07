@@ -1,0 +1,191 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Details>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "_Layout.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" href="css/details.css">
+    <title>News Details | Citro - Agency Service</title>
+</head>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <img src="images/logos/logotype.svg" alt="crito logotype">
+           <button class="menu-bars"><i class="menu-bars fa-solid fa-bars-staggered"></i></button> 
+        <div class="menu">
+            <div class="top-menu">
+                <div class="contact-information">
+                    <div class="content-box">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        +46 (8) 121 470 50
+                    </div>
+                    <div class="content-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@crito.com
+                    </div>
+                    <div class="content-box last">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Sveavägen 31, 111 34 STOCKHOLM
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="https://facebook.com/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="main-menu">
+                <nav>
+                    <a  href="/">Home</a>
+                    <a href="/Services">Service</a>
+                    <a class="active" href="/News">News</a>
+                    <a href="/Contacts">Contact</a>
+                </nav>
+                <a class="btn-theme btn-login" href="/Login">Login <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <!-- Showcase section  -->
+    <section class="showcase">
+        <div class="container">
+            <div class="content">
+                    <p>Home</p>
+                    <p class="thick">News</p>
+                <h1>News & Articles</h1>
+            </div>
+        </div>
+        <img class="background-lines" src="images/background-effects/background-lines.svg" alt="background lines">
+    </section>
+    <!-- Details section -->
+    <section class="details">
+        <div class="container">
+            <div class="content">
+                <div class="title">
+                   <h2>How To Use Digitalization In The Classroom</h2> 
+                   <div class="status">
+                    <p>Mar 25,2023</p>
+                    <div class="circles"></div>
+                    <p>Business</p>
+                    <div class="circles"></div>
+                    <p>Kimberly Hansen</p>
+                   </div>
+                </div>
+                <img src="images/linkedin-sales-solutions-Mis5fyJi7Q0-unsplash.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</p>
+                <p>Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. uspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.</p>
+                <p>Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.</p>
+                <div class="quote"><i class="fa-solid fa-quote-left"></i><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</p></div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <div class="titles">
+                    <p>Digitalization</p>
+                    <p>School</p>
+                    <p>IT</p>
+                    <p>Design</p>
+                    <p>Work</p>
+                    <p>Tech</p>
+                </div>
+            </div>
+            <aside class="search-and-info">
+                <div class="search-container">
+                    <form class="search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" placeholder="Type to search.." name="search">
+                    </form>
+                </div>
+                    <div class="recent-posts">
+                        <h3>Recent Posts</h3>
+                        <div class="line"></div>
+                        <div class="info">
+                            <p class="title">How To Blow Through Capital At An Incredible Rate</p>
+                            <p>Jan 14, 2020</p>
+                        </div>
+                        <hr>
+                        <div class="info">
+                            <p class="title">Design Studios That Everyone Should Know About? </p>
+                            <p>Jan 14, 2020</p>
+                        </div>
+                        <hr>
+                        <div class="info">
+                            <p class="title">How did we get 1M+ visitors in 30 days without anything!</p>
+                            <p>Jan 14, 2020</p>
+                        </div>
+                        <hr>
+                        <div class="info">
+                            <p class="title">Figma On Figma: How We Built Our Website Design System</p>
+                            <p>Jan 14, 2020</p>
+                        </div>
+                    </div>
+                    <div class="categories">
+                        
+                        <h3>Categories</h3>
+                        <div class="line"></div>
+
+                        <div>
+                        <p>Technology -</p>
+                        <p class="posts">20 Posts</p>
+                        </div>
+                        <div>
+                            <p>Freelancing -</p>
+                            <p class="posts">07 Posts</p>
+                        </div>
+                        <div>
+                        <p>Writing -</p>
+                        <p class="posts">16 Posts</p>
+                        </div><div>
+                        <p>Marketing -</p>
+                        <p class="posts">11 Posts</p>
+                        </div><div>
+                        <p>Business -</p>
+                        <p class="posts">35 Posts</p>
+                        </div>
+                        <p>Education -</p>
+                        <p class="posts">14 Posts</p>
+                    </div>
+            </aside>
+        </div>
+    </section>
+    <!-- Get Every Single Articles & News section -->
+    <section class="get-single-articles-and-news">
+        <div class="container">
+            <p class="title">Article & News</p>
+            <div class="top">
+                <h2>Get Every Single Articles & News</h2>
+                <a class="btn-theme btn-login" href="#">Browse Articles <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="content"> 
+                <div class="box-info"><p class="day">25</p><p class="month">Mar</p></div>
+                <img src="images/linkedin-sales-solutions-Mis5fyJi7Q0-unsplash.jpg" alt="">
+                <p>Business</p>
+                <h3>How To Use Digitalization In The Classroom</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </div>
+            <div class="content">
+                <div class="box-info"><p class="day">17</p><p class="month">Mar</p></div>
+                <img src="images/emiliano-vittoriosi-vEN1bsdSjxM-unsplash.jpg" alt="">
+                <p>Business</p>
+                <h3>How To Implement Chat GPT In Your Projects</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </div>
+            <div class="content"> 
+                <div class="box-info"><p class="day">13</p><p class="month">Mar</p></div>
+                <img src="images/kobu-agency-ipARHaxETRk-unsplash.jpg" alt="">
+                <p>Business</p>
+                <h3>The Guide To Support Modern CSS Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+            </div>
+            <div class="circles">
+                <div class="active"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    </main>
